@@ -152,7 +152,7 @@ def get_input():
 df = get_input()
 st.write(df)
 
-data_sample = pd.read_excel('tcas_new_sample1.xlsx')
+data_sample = pd.read_csv('tcas_new_sample1.csv')
 df = pd.concat([df, data_sample],axis=0)
 
 cat_data = pd.get_dummies(df[['Sex','FacultyName','EntryTypeName']])
